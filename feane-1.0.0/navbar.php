@@ -28,7 +28,7 @@
                 <a class="nav-link" href="first.php">IMC</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.php">About</a>
+                <a class="nav-link" href="rewards.php">Rewards</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="maps.php">Maps</a>

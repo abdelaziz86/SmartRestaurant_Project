@@ -7,7 +7,20 @@
   <title> Feane </title>
 
   <?php include 'header.php' ; ?>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <style>
+    .textCard{
+        margin-top : 14px ; 
+        font-size : 18px ; 
+    }
+
+    .butt{
+        background-color : #ffbe33 ;
+        border : none ;
+    }
+
+  </style>
 </head>
 
 <body class="sub_page">
@@ -24,25 +37,154 @@
         </h2>
       </div>
     
-      <div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <!-- Restaurant Image -->
-                <div class="card-body">
-                    <div 
-                    <img style="width : 100px" src="https://static.actu.fr/uploads/2022/12/316295096-10161144238112952-5357702820622569035-n.jpg" class="card-img-top" alt="Restaurant Image">
-
-                    <!-- Counter for "How much people are going to this restaurant" -->
-                    <h5 class="card-title">Going to the Restaurant</h5>
-                    <p class="card-text" id="goingCount">0</p>
+      <div class="container" style="margin-top : 40px ; max-height: 600px; overflow-auto;">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                    <!-- Restaurant Image -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <!-- Restaurant Image -->
+                                <img style="width: 100px; height : 100px" src="https://static.actu.fr/uploads/2022/12/316295096-10161144238112952-5357702820622569035-n.jpg" class="card-img-top" alt="Restaurant Image">
+                            </div>
+                            <div class="col">
+                                <!-- Counter for "How much people are going to this restaurant" -->
+                                <h5>
+                                    KFC
+                                </h5>
+                                
+                                <h5 class="textCard" style="color : #ffbe33 ; ">
+                                    <i class="fa fa-hourglass"></i>
+                                    Going : 3
+                                </h5> 
+                                <h5 class="textCard" style="color : green ; ">
+                                    <i class="fa fa-check"></i>
+                                    Already In : 9
+                                </h5>  
+                            </div>
+                            <div class="col-auto">
+                                    <!-- Round button for "Going" -->
+                                    <button class="btn btn-primary butt" >
+                                        <i class="fa fa-plus"></i> 
+                                        Going
+                                    </button>
+                                </div>
+                        </div>
+                    </div> 
                 </div>
-            </div>
+
+
+                <div class="card" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin-top : 15px">
+                    <!-- Restaurant Image -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <!-- Restaurant Image -->
+                                <img style="width: 100px; height : 100px" src="https://api.halalfoodtrip.com/images/4170_b63b352b-e08d-c68d-6671-0c30344f957a.jpg" class="card-img-top" alt="Restaurant Image">
+                            </div>
+                            <div class="col">
+                                <!-- Counter for "How much people are going to this restaurant" -->
+                                <h5>
+                                    O'Tacos
+                                </h5>
+                                <h5 class="textCard" style="color : #ffbe33 ; ">
+                                    <i class="fa fa-hourglass"></i>
+                                    Going : 12
+                                </h5> 
+                                <h5 class="textCard" style="color : green ; ">
+                                    <i class="fa fa-check"></i>
+                                    Already In : 8
+                                </h5>  
+                            </div>
+                            <div class="col-auto">
+                                    <!-- Round button for "Going" -->
+                                    <button class="btn btn-primary butt" >
+                                        <i class="fa fa-plus"></i> 
+                                        Going
+                                    </button>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <div class="card" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin-top : 15px">
+                    <!-- Restaurant Image -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <!-- Restaurant Image -->
+                                <img style="width: 100px; height : 100px" src="https://www.pagesjaunes.fr/media/ugc/pizza_hut_07505600_104008308" class="card-img-top" alt="Restaurant Image">
+                            </div>
+                            <div class="col">
+                                <h5>
+                                    Pizza Hut
+                                </h5>
+                                <!-- Counter for "How much people are going to this restaurant" -->
+                                <h5 class="textCard" style="color : #ffbe33 ; ">
+                                    <i class="fa fa-hourglass"></i>
+                                    Going : 1
+                                </h5> 
+                                <h5 class="textCard" style="color : green ; ">
+                                    <i class="fa fa-check"></i>
+                                    Already In : 27
+                                </h5>  
+                            </div>
+                            <div class="col-auto">
+                                    <!-- Round button for "Going" -->
+                                    <button class="btn btn-primary butt" >
+                                        <i class="fa fa-plus"></i> 
+                                        Going
+                                    </button>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <div class="card" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin-top : 15px">
+                    <!-- Restaurant Image -->
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <!-- Restaurant Image -->
+                                <img style="width: 100px; height : 100px" src="https://media-cdn.tripadvisor.com/media/photo-s/13/2d/e5/6c/restaurant-turc.jpg" class="card-img-top" alt="Restaurant Image">
+                            </div>
+                            <div class="col">
+                                <h5>
+                                    Istanbul Grill
+                                </h5>
+                                
+                                <!-- Counter for "How much people are going to this restaurant" -->
+                                <h5 class="textCard" style="color : #ffbe33 ; ">
+                                    <i class="fa fa-hourglass"></i>
+                                    Going : 8
+                                </h5> 
+                                <h5 class="textCard" style="color : green ; ">
+                                    <i class="fa fa-check"></i>
+                                    Already In : 15
+                                </h5>  
+                            </div>
+                            <div class="col-auto">
+                                    <!-- Round button for "Going" -->
+                                    <button class="btn btn-primary butt" >
+                                        <i class="fa fa-plus"></i> 
+                                        Going
+                                    </button>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+
+                
+
+
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; ">
                 <!-- Google Maps Embed -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24389.51158908039!2d2.3271663375004814!3d48.871581419396854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skfc%20maps!5e0!3m2!1sfr!2sfr!4v1701608055402!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe style="height : 600px;" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24389.51158908039!2d2.3271663375004814!3d48.871581419396854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skfc%20maps!5e0!3m2!1sfr!2sfr!4v1701608055402!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
          
