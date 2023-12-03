@@ -26,14 +26,14 @@
   <section class="food_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h1>
           Our Rewards
-        </h2>
+        </h1>
       </div>
 
-      <h3 style="margin-top : 40px ">
+      <h4 style="margin-top : 40px ">
           You currently have <i class='fas fa-coins'></i> <span style="font-weight : bold"> 450 points. </span>
-      </h3>
+      </h4>
       <div>
         You can redeem your points for the following food !
       </div>
