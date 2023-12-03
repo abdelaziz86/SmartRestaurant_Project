@@ -4,51 +4,9 @@
 <head>
   <!-- Basic -->
   
-  <title> Diet </title>
+  <title> Feane </title>
 
   <?php include 'header.php' ; ?>
-
-  <style>
-         
-
-        .form1 {
-            background-color: #fff;
-            padding: 20px ;  
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top : 50px ; 
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #result {
-            margin-top: 20px; 
-            display : none  ;
-        }
-    </style>
 
 </head>
 
@@ -58,51 +16,41 @@
 
   <!-- food section -->
 
-
   <section class="food_section layout_padding">
-    <div class="container" style="width : 60% ;">
+    <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          IMC Calculator
+          Find the nearest restaurants to your Location
         </h2>
       </div>
-
-
-
-      <form id="bmiForm" class="form1">
-        <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" name="weight" required>
-
-        <label for="height">Height (cm):</label>
-        <input type="number" id="height" name="height" required>
-
-        <button type="button" onclick="calculateBMI()">Calculate BMI</button>
-
-        <div id="result" class="alert alert-success" role="alert" ></div>
-    </form>
-
-     <script>
-        function calculateBMI() {
-            var weight = document.getElementById('weight').value;
-            var height = document.getElementById('height').value;
-
-            var bmi = (weight / ((height / 100) * (height / 100))).toFixed(2);
-
-            var resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = 'Your BMI is: ' + bmi + '<br>';
-            resultDiv.style.display = 'block';
-            // Interpret BMI and provide a creative message
-            if (bmi < 18.5) {
-                resultDiv.innerHTML += 'You are considered underweight. Eat a bit more!';
-            } else if (bmi >= 18.5 && bmi < 24.9) {
-                resultDiv.innerHTML += 'Congratulations! You are in a healthy weight range.';
-            } else {
-                resultDiv.innerHTML += 'You are considered overweight. Consider consulting with a healthcare professional.';
-            }
-        }
-    </script>
-
     
+      <div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <!-- Restaurant Image -->
+                <div class="card-body">
+                    <div 
+                    <img style="width : 100px" src="https://static.actu.fr/uploads/2022/12/316295096-10161144238112952-5357702820622569035-n.jpg" class="card-img-top" alt="Restaurant Image">
+
+                    <!-- Counter for "How much people are going to this restaurant" -->
+                    <h5 class="card-title">Going to the Restaurant</h5>
+                    <p class="card-text" id="goingCount">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <!-- Google Maps Embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24389.51158908039!2d2.3271663375004814!3d48.871581419396854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skfc%20maps!5e0!3m2!1sfr!2sfr!4v1701608055402!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+         
+    </div>
+</div>
+
+
+    </div>   
   </section>
 
   <!-- end food section -->

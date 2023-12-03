@@ -25,11 +25,15 @@
                 <a class="nav-link" href="menu.php">Menu <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="first.php">IMC</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="about.php">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.php">Book Table</a>
-              </li>
+                <a class="nav-link" href="maps.php">Maps</a>
+              </li> 
+
             </ul>
             <div class="user_option">
               <a href="" class="user_link">
